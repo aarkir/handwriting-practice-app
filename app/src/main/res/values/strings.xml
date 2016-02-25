@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CharWrite</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- painting -->
+    <string name="start_new">New</string>
+    <string name="visibility">Toggle Visibility</string>
+
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+
+    <string name="size">Size</string>
+    <string name="brushSize">Brush Size:</string>
+    <string name="textSize">Text Size:</string>
+
+    <string name="editText">Enter Text Here</string>
+
+    <string name="colors">Change Colors</string>
+
+    <string name="forward">Move Forward</string>
+    <string name="back">Move Backwards</string>
+
+    <!-- Action Bar -->
+    <string name="strokes">Stroke Order</string>
+    <string name="dictionary">Dictionary</string>
+
+    <!-- Color Picker Popup -->
+    <string name="paint_color">Paint Color</string>
+    <string name="text_color">Text Color</string>
+    <string name="button_color">Button Color</string>
+    <string name="reset">Reset Colors</string>
+
+    <!-- about -->
+    <string name="app_descrip">CharBoard allows you to practice writing characters on the go, without a whiteboard or paper.</string>
+    <string name="app_credits">Credits:\n<a href="https://icons8.com/">Icon8</a> for Eraser icon\n<a href="https://design.google.com/icons/">Google Material icons</a>\nLars Werkman\'s <a href="https://github.com/LarsWerkman/HoloColorPicker">HoloColorPicker</a></string>
+    <string name="developer">By Aaron Kirtland at www.aarkir.com</string>
+</resources>

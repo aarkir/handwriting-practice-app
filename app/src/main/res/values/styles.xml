@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="SierpinskiTheme" parent="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="icon">@mipmap/ic_launcher</item>
+        <item name="colorPrimary">@color/SierpinskiGreen</item>
+        <item name="colorPrimaryDark">@color/SierpinskiGreen</item>
+        <item name="android:imageButtonStyle">@style/SierpinskiTheme.ImageButton</item>
+    </style>
+    <style name="SierpinskiTheme.ImageButton">
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+    <style name="SierpinskiTheme.ImageButton.TopButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="SierpinskiTheme.ImageButton.BottomButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>

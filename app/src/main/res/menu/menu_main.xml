@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <!--  <item android:id="@+id/strokes" android:title="@string/strokes"
+        app:showAsAction="ifRoom" android:icon="@drawable/ic_format_list_numbered_white_48dp" android:visible="false" /> -->
+    <item android:id="@+id/dictionary" android:title="@string/dictionary"
+        app:showAsAction="ifRoom" android:icon="@drawable/ic_translate_white_48dp" android:visible="true" />
+</menu>

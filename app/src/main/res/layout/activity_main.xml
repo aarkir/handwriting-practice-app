@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/fullLinearLayout">
+    <!-- Top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/topIcons"
+        android:theme="@style/SierpinskiTheme">
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.TopButton"
+            android:id="@+id/draw_button"
+            android:contentDescription="@string/brush"
+            android:src="@drawable/ic_create_black_48dp"/>
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.TopButton"
+            android:src="@drawable/ic_format_size_black_48dp"
+            android:contentDescription="@string/brushSize"
+            android:id="@+id/sizeButton"/>
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.TopButton"
+            android:src="@drawable/ic_color_lens_black_48dp"
+            android:contentDescription="@string/colors"
+            android:id="@+id/colors"/>
+    </LinearLayout>
+
+    <!-- Main -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/displayText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:freezesText="true"/>
+        <com.aarkir.SimpleHandwritingPractice.DrawingView
+            android:id="@+id/drawing"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <!-- Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.BottomButton"
+            android:id="@+id/new_button"
+            android:contentDescription="@string/start_new"
+            android:src="@drawable/ic_insert_drive_file_black_48dp" />
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.BottomButton"
+            android:id="@+id/visibility"
+            android:contentDescription="@string/visibility"
+            android:src="@drawable/ic_visibility_black_48dp"/>
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/editText"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.BottomButton"
+            android:id="@+id/back"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_skip_previous_black_48dp"/>
+        <ImageButton
+            style="@style/SierpinskiTheme.ImageButton.BottomButton"
+            android:id="@+id/forward"
+            android:contentDescription="@string/forward"
+            android:src="@drawable/ic_skip_next_black_48dp"/>
+    </LinearLayout>
+</LinearLayout>

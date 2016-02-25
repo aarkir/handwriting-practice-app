@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/size_dropdown"
+    android:background="@drawable/border">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brushSize" />
+        <SeekBar
+            android:id="@+id/drawSizeSeekBar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="50"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textSize" />
+        <SeekBar
+            android:id="@+id/textSizeSeekBar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="300"/>
+    </LinearLayout>
+</LinearLayout>
